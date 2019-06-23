@@ -1,0 +1,104 @@
+header {
+    font-family: "Arial";
+    text-align: center;
+    color: #4286f4;
+    font-size: 2em;
+    background-color: lavender;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+header p{
+    font-style: italic;
+}
+
+body
+{
+    font-family: "Arial";
+}
+
+h1
+{
+    text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav form {
+    padding: 7px 8px;
+    text-align: center;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4286f4;
+    color: white;
+}
+
+.topnav a.companyTab {
+    background-color: #32CD32;
+    color: white;
+    float: right;
+}
+
+.topnav a.profile {
+    background-color: #4286f4;
+    color: white;
+    float: right;
+}
+  
+/*Add color to the disconnect choice */
+.topnav a.disconnect {
+    background-color: crimson;
+    color: white;
+    float: right;
+}
+
+/* modify the signIn form */
+.signInForm {
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+/* modify the register form */
+.registerForm {
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+/* search bar*/
+.btn {
+  background-color: #4286f4;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  margin: 4px 2px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.btn:hover {opacity: 1}
