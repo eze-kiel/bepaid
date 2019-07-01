@@ -102,3 +102,11 @@ h1
 }
 
 .btn:hover {opacity: 1}
+
+.topnav input.field {
+  background-color: white;
+  background-image: url('../images/searchicon.png');
+  background-position: 1px 1px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}

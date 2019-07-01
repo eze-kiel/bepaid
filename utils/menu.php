@@ -7,7 +7,7 @@
         <a class="profile" href="profile.php">My profile</a>
         <a class="companyTab" href="#">Rate a company</a>
         <form class="searchbar" method="post" action="../post/searchPost.php">
-        	<input type="text" placeholder="Search..">
+        	<input class ="field" type="text" placeholder="Search..">
         	<input class ="btn" type="submit" value="Search">
         </form>
 </div>
