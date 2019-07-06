@@ -2,7 +2,7 @@
 session_start();
 $title = 'Register';
 
-if(isset($_SESSION['username'])) {
+if(isset($_SESSION['company_name'])) {
 ?>
 <?php ob_start(); ?>
 
@@ -10,7 +10,7 @@ if(isset($_SESSION['username'])) {
     <?php require('../utils/menu.php');?>
     <h1>Register</h1>
 
-    <p>You already have an account <strong><?php echo $_SESSION['username'];?> </strong>!</p>
+    <p>You already have an account <strong><?php echo $_SESSION['company_name'];?> </strong>!</p>
 
 <?php $content = ob_get_clean();
 

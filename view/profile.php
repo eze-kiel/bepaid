@@ -3,6 +3,7 @@ session_start();
 
 $title = 'my profile';
 
+//if connected bloc
 if (isset($_SESSION['id'])) {
 ?>
 <?php ob_start(); ?> 
@@ -12,8 +13,19 @@ if (isset($_SESSION['id'])) {
 
 	<p>Welcome <strong><?= $_SESSION['company_name'];?></strong> on your profile</p>
 
+	<p>Here are the information you entered :</p>
+	<!-- display user's informations -->
+	<?php require('../utils/profileInformations.php'); ?>
+
+	<!-- allow user to update his profile -->
+	<div class="modifyProfile">
+		<?php require('../utils/modifyProfileForm.php'); ?>
+	</div>
+
 <?php $content = ob_get_clean();
 }
+
+//if not connected bloc
 else
 {
 ?>
