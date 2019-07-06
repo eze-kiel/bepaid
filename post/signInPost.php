@@ -4,7 +4,7 @@ require('../utils/dbConnect.php');
 //test parameters
 if ($_POST['company_name'] != null AND $_POST['password'] != null)
 {
-	$req = $db->prepare('SELECT id, password FROM members WHERE company_name = ?');
+	$req = $db->prepare('SELECT * FROM members WHERE company_name = ?');
 	$req->execute(array($_POST['company_name']));
 
 	$result = $req->fetch();
@@ -23,6 +23,9 @@ if ($_POST['company_name'] != null AND $_POST['password'] != null)
 			session_start();
 			$_SESSION['id'] = $result['id'];
 			$_SESSION['company_name'] = $_POST['company_name'];
+			$_SESSION['first_name'] = $result['first_name'];
+			$_SESSION['surname'] = $result['surname'];
+			
 			$req->closeCursor();
 			header('Location: ../index.php');
 		}

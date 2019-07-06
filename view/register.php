@@ -10,7 +10,7 @@ if(isset($_SESSION['company_name'])) {
     <?php require('../utils/menu.php');?>
     <h1>Register</h1>
 
-    <p>You already have an account <strong><?php echo $_SESSION['company_name'];?> </strong>!</p>
+    <p>You already have an account <strong><?php echo $_SESSION['first_name'].' '.$_SESSION['surname'];?> </strong>!</p>
 
 <?php $content = ob_get_clean();
 

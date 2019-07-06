@@ -11,7 +11,7 @@ if (isset($_SESSION['id'])) {
 	<?php require('../utils/menu.php'); ?>
 	<h1>Profile</h1>
 
-	<p>Welcome <strong><?= $_SESSION['company_name'];?></strong> on your profile</p>
+	<p>Welcome on your profile, <strong><?= $_SESSION['first_name'].' '.$_SESSION['surname'];?></strong></p>
 
 	<p>Here are the information you entered :</p>
 	<!-- display user's informations -->
