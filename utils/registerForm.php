@@ -15,6 +15,8 @@
 
     <p>Your company's country:</p><input type="text" name="company_country"><br>
 
+    <p>Your company's telephone:</p><input type="text" name="company_tel"><br>
+
     <p>Your company's email address:</p><input type="text" name="company_mail"><br>
 
     <input type="submit" value="Register">
