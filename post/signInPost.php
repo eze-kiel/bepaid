@@ -2,10 +2,10 @@
 require('../utils/dbConnect.php');
 
 //tester la validité des arguements donnés
-if ($_POST['username'] != null AND $_POST['password'] != null)
+if ($_POST['company_name'] != null AND $_POST['password'] != null)
 {
-	$req = $db->prepare('SELECT id, password FROM members WHERE username = ?');
-	$req->execute(array($_POST['username']));
+	$req = $db->prepare('SELECT id, password FROM members WHERE company_name = ?');
+	$req->execute(array($_POST['company_name']));
 
 	$result = $req->fetch();
 
@@ -22,7 +22,7 @@ if ($_POST['username'] != null AND $_POST['password'] != null)
 		{
 			session_start();
 			$_SESSION['id'] = $result['id'];
-			$_SESSION['username'] = $_POST['username'];
+			$_SESSION['company_name'] = $_POST['company_name'];
 			$req->closeCursor();
 			header('Location: ../index.php');
 		}

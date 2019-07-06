@@ -10,7 +10,7 @@ if (isset($_SESSION['id'])) {
 	<?php require('../utils/menu.php'); ?>
 	<h1>Profile</h1>
 
-	<p>Welcome <strong><?= $_SESSION['username'];?></strong> on your profile</p>
+	<p>Welcome <strong><?= $_SESSION['company_name'];?></strong> on your profile</p>
 
 <?php $content = ob_get_clean();
 }

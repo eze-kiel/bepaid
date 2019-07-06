@@ -25,6 +25,7 @@ if ($existing->fetch() == null)
 			//close the cursor
 			$req->closeCursor();
 			echo "Added!";
+			header('Location: ../index.php');
 		}
 	}
 	else
