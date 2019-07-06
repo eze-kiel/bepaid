@@ -11,5 +11,5 @@ while($row = $req->fetch()) {
     echo '<strong>ZIP Code : </strong>'.$row['company_zip'].'<br>';
     echo '<strong>Country : </strong>'.$row['company_country'].'<br>';
     echo '<strong>Telephone : </strong>'.$row['company_tel'].'<br>';
-    echo '<strong>Mail : </strong>'.$row['company_mail'];
+    echo '<strong>Mail : </strong>'.$row['company_mail'].'<br>';
 }

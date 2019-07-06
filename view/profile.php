@@ -16,11 +16,7 @@ if (isset($_SESSION['id'])) {
 	<p>Here are the information you entered :</p>
 	<!-- display user's informations -->
 	<?php require('../utils/profileInformations.php'); ?>
-
-	<!-- allow user to update his profile -->
-	<div class="modifyProfile">
-		<?php require('../utils/modifyProfileForm.php'); ?>
-	</div>
+	<br><a href="../view/updateInformations.php">Update those informations</a>
 
 <?php $content = ob_get_clean();
 }
