@@ -35,7 +35,7 @@ if ($existing->fetch() == null)
 }
 else
 {
-	echo "This username is aready used";
+	echo "This company name is already used";
 	?>
 	<br><h3><a href="signUp.php">Back to sign up page</a></h3>
 <?php

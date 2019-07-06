@@ -1,7 +1,7 @@
 <?php
 require('../utils/dbConnect.php');
 
-//tester la validité des arguements donnés
+//test parameters
 if ($_POST['company_name'] != null AND $_POST['password'] != null)
 {
 	$req = $db->prepare('SELECT id, password FROM members WHERE company_name = ?');
@@ -9,7 +9,7 @@ if ($_POST['company_name'] != null AND $_POST['password'] != null)
 
 	$result = $req->fetch();
 
-	//vérifier si le mdp est le bon
+	//check password validity
 	$is_password_correct = password_verify($_POST['password'], $result['password']);
 
 	if (!$result)
